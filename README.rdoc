@@ -11,6 +11,14 @@ To install necessary gems:
 
 <tt>bundle install</tt>
 
+To connect the database:
+
+<tt>sudo -u postgres psql</tt>
+
+To change the password for postgres user (check <tt>/config/database.yml</tt> file):
+
+<tt>ALTER USER postgres WITH PASSWORD 'asdewq';<tt>
+
 To setup the database:
 
 <tt>rake db:create</tt>
