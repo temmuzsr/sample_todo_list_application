@@ -17,10 +17,6 @@ To setup the database:
 
 <tt>rake db:migrate</tt>
 
-To install devise:
-
-<tt>rails generate devise:install</tt>
-
 To import data for Elasticsearch:
 
 <tt>bundle exec rake environment elasticsearch:import:model CLASS='TodoListItem' FORCE=y</tt>
