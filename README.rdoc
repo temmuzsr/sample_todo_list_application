@@ -8,17 +8,16 @@ Necessary tools:
 - bootstrap
 
 To install necessary gems:
-"bundle install"
+<tt>bundle install</tt>
 
 To setup the database:
-
-"rake db:create"
-"rake db:migrate"
+<tt>rake db:create</tt>
+<tt>rake db:migrate</tt>
 
 To install devise:
-"rails generate devise:install"
+<tt>rails generate devise:install</tt>
 
 To import data for Elasticsearch:
 
-"bundle exec rake environment elasticsearch:import:model CLASS='TodoListItem' FORCE=y"
+<tt>bundle exec rake environment elasticsearch:import:model CLASS='TodoListItem' FORCE=y</tt>
 
