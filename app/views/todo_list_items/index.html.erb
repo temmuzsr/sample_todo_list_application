@@ -1,0 +1,49 @@
+<%= render partial: "tweet_button" %>
+
+<%= form_tag('/todo_list_items/search_items_by_date' , class: "navbar-form", method: "get", style: "margin-left:-15px;") do %> 
+
+  <div class='input-group date' id='datetimepicker1'>
+      <input type='text' class="form-control" name="start_date" placeholder="Start Date"></input>
+      <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar">Select</span>
+      </span>
+  </div>
+  <div class='input-group date' id='datetimepicker2'>
+      <input type='text' class="form-control" name="end_date" placeholder="End Date"></input>
+      <span class="input-group-addon">
+          <span class="glyphicon glyphicon-calendar">Select</span>
+      </span>
+  </div>
+  <div class="input-group">
+    <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">Search by Date</button>
+    </div>
+  </div>
+<% end %>
+
+<%= form_tag('/todo_list_items/search_items_by_text' , class: "navbar-form", method: "get", style: "margin-left:-15px;") do %> 
+  <div class="input-group">
+      <input type="text" class="form-control" method="get" name="q">
+  </div>
+  <div class="input-group">
+    <div class="input-group-btn">
+        <button class="btn btn-default" type="submit">Search by Text</button>
+    </div>
+  </div>
+
+<% end %>
+
+<%= render partial: "todo_list_table" %>
+
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_todo_list_item_path,
+            :class => 'btn btn-primary' %>
+
+
+<script type="text/javascript">
+  $(function () {
+    $('#datetimepicker1').datetimepicker();
+    $('#datetimepicker2').datetimepicker();
+
+  });
+</script>

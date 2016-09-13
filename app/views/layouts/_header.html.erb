@@ -1,0 +1,11 @@
+<div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+
+    <a class="navbar-brand" href="<%= root_path %>">HOMEPAGE</a>
+    <% if current_user %>
+      <a class="navbar-brand" href="<%= edit_user_registration_path %>">My Profile|@<%= current_user.name %></a>
+      <%= link_to('Logout', destroy_user_session_path, :method => :delete, class: "btn btn-xs btn-default", style: "margin-top:12px;") %>              
+    <% end %>
+  </div>
+</div>
+

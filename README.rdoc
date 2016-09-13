@@ -1,0 +1,24 @@
+== README
+
+Necessary tools:
+- elasticsearch
+- redis
+- postgresql
+- devise
+- bootstrap
+
+To install necessary gems:
+"bundle install"
+
+To setup the database:
+
+"rake db:create"
+"rake db:migrate"
+
+To install devise:
+"rails generate devise:install"
+
+To import data for Elasticsearch:
+
+"bundle exec rake environment elasticsearch:import:model CLASS='TodoListItem' FORCE=y"
+
