@@ -8,13 +8,17 @@ Necessary tools:
 - bootstrap
 
 To install necessary gems:
+
 <tt>bundle install</tt>
 
 To setup the database:
+
 <tt>rake db:create</tt>
+
 <tt>rake db:migrate</tt>
 
 To install devise:
+
 <tt>rails generate devise:install</tt>
 
 To import data for Elasticsearch:
