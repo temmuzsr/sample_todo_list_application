@@ -17,7 +17,7 @@ To connect the database:
 
 To change the password for postgres user (check <tt>/config/database.yml</tt> file):
 
-<tt>ALTER USER postgres WITH PASSWORD 'asdewq';<tt>
+<tt>ALTER USER postgres WITH PASSWORD 'asdewq';</tt>
 
 To setup the database:
 
