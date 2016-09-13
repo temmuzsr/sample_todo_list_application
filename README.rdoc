@@ -21,3 +21,4 @@ To import data for Elasticsearch:
 
 <tt>bundle exec rake environment elasticsearch:import:model CLASS='TodoListItem' FORCE=y</tt>
 
+host: <tt>http://127.0.0.1:3000</tt>
